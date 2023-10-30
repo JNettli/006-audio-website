@@ -179,6 +179,7 @@ h6 {
 
 .hero-banner-mobile {
     position: relative;
+    margin-bottom: 60px;
 }
 
 .hero-banner-mobile img {
@@ -208,4 +209,62 @@ h6 {
     color: #FFF;
     opacity: 75%;
     padding-bottom: 28px;
+}
+
+.product-container {
+    height: 217px;
+    width: auto;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 16px;
+}
+
+.container-bg {
+    background-color: #F1F1F1;
+    border-radius: 8px;
+    height: 165px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.product-img {
+    height: fit-content;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    top: -52px;
+    margin-left: -40px;
+}
+
+.product-header {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1.07px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.shop-item {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #787878;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.orange-arrow {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #D87D4A;
 }
