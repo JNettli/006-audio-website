@@ -17,6 +17,7 @@ body {
     font-weight: 500;
     background-color: var(--quadrary);
     margin: 0;
+    width: auto;
 }
 
 h1 {
@@ -91,9 +92,9 @@ h6 {
     letter-spacing: 1px;
     text-transform: uppercase;
     border: none;
-    color: #fff;
+    color: #FFF;
     background-color: var(--primary);
-    padding: 15px;
+    padding: 15px 30px;
 }
 
 .btn-orange:hover {
@@ -107,15 +108,33 @@ h6 {
     letter-spacing: 1px;
     text-transform: uppercase;
     border: 1px solid #000;
-    background-color: #fff;
+    background-color: transparent;
     color: #000;
-    padding: 15px;
+    padding: 15px 30px;
 }
 
 .btn-white:hover {
     cursor: pointer;
     background-color: #000;
-    color: #fff;
+    color: #FFF;
+}
+
+.btn-black {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #000;
+    border: none;
+    margin: 0 auto;
+    color: #FFF;
+    padding: 15px 30px;
+}
+
+.btn-black:hover {
+    background-color: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
 }
 
 .btn-transp {
@@ -153,27 +172,11 @@ h6 {
     width: inherit;
 }
 
-.menu-mobile {
+.menu-mobile, .logo-mobile, .cart-mobile {
     display: flex;
 }
 
-.logo-mobile {
-    display: flex;
-}
-
-.cart-mobile {
-    display: flex;
-}
-
-.menu-mobile:hover {
-    cursor: pointer;
-}
-
-.logo-mobile:hover {
-    cursor: pointer;
-}
-
-.cart-mobile:hover {
+.menu-mobile:hover, .logo-mobile:hover, .cart-mobile:hover {
     cursor: pointer;
 }
 
@@ -223,7 +226,7 @@ h6 {
 }
 
 .container-bg {
-    background-color: #F1F1F1;
+    background-color: var(--tertiary);
     border-radius: 8px;
     height: 165px;
     width: 100%;
@@ -232,7 +235,6 @@ h6 {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    
 }
 
 .product-img {
@@ -241,12 +243,17 @@ h6 {
     position: absolute;
     left: 50%;
     top: -52px;
-    margin-left: -40px;
+    margin-left: -82px;
+}
+
+.product-img img {
+    max-height: 150px;
+    width: auto;
 }
 
 .product-header {
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 1.07px;
     text-transform: uppercase;
     padding-bottom: 15px;
@@ -254,7 +261,7 @@ h6 {
 
 .shop-item {
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #787878;
@@ -264,7 +271,122 @@ h6 {
 
 .orange-arrow {
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
-    color: #D87D4A;
+    color: var(--primary);
+}
+
+.speaker-product-box {
+    background-color: var(--primary);
+    width: auto;
+    height: 600px;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-bottom: 24px;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.outer-circle, .middle-circle, .smol-circle {
+    border-radius: 50%;
+    border: 1px solid #FFFFFF80;
+    background-color: transparent;
+    left: 50%;
+}
+
+.outer-circle {
+    width: 558px;
+    height: 558px;
+    position: absolute;
+    margin-left: -279px;
+    margin-top: -121px;
+}
+
+.middle-circle {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    margin-left: -160px;
+    margin-top: -2px;
+}
+
+.smol-circle {
+    width: 279px;
+    height: 279px;
+    position: absolute;
+    margin-left: -139.5px;
+    margin-top: 19px;
+}
+
+.preview-img img {
+    margin: 55px auto 24px auto;
+    max-height: 207px;
+}
+
+.preview-header {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFF;
+    letter-spacing: 1.29px;
+    line-height: 40px;
+    padding-bottom: 24px;
+}
+
+.preview-maintext {
+    font-size: 15px;
+    font-weight: 500;
+    color: #FFF;
+    line-height: 25px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+}
+
+.product-header-mobile-black {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #000;
+    text-transform: uppercase;
+    margin: 24px;
+}
+
+.zx7-product-box {
+    height: 320px;
+    width: auto;
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    position: relative;
+}
+
+.zx7-product-box img {
+    max-height: 320px;
+    border-radius: 8px;
+    position: absolute;
+    z-index: -1;
+}
+
+.yx1-product-box {
+    height: fit-content;
+    width: auto;
+}
+
+.yx1-product-box img {
+    max-height: 200px;
+    margin: 24px;
+    border-radius: 8px;
+}
+
+.yx1-container {
+    background-color: var(--tertiary);
+    height: 200px;
+    margin: 24px;
+    display: flex;
+    align-items: center;
 }
