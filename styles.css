@@ -91,6 +91,10 @@ h6 {
     color: #D87D4A;
 }
 
+#banner-text {
+    color: #787878;
+}
+
 .btn-orange {
     font-size: 13px;
     font-weight: 700;
@@ -182,21 +186,49 @@ h6 {
     cursor: pointer;
 }
 
-.hero-banner-mobile {
+.hero-banner {
     position: relative;
     margin-bottom: 60px;
 }
 
-.hero-banner-mobile img {
+.hero-banner img {
     width: 100%;
     margin-top: -30px;
+}
+
+.mobile-img {
+    display: block;
+}
+
+.tablet-img {
+    display: none;
+}
+
+.desktop-img {
+    display: none;
+}
+
+.mobile-banner {
+    display: block;
+}
+
+.tablet-banner {
+    display: none;
+}
+
+.desktop-banner {
+    display: none;
 }
 
 .hero-banner-mobile-text {
     position: absolute;
     top: 25%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     text-align: center;
     padding: 24px;
+    max-width: 328px;
 }
 
 .hero-banner-mobile .overline {
@@ -214,6 +246,11 @@ h6 {
     color: #FFF;
     opacity: 75%;
     padding-bottom: 28px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
 }
 
 .product-container {
@@ -458,4 +495,32 @@ h6 {
     display: flex;
     margin: 48px;
     gap: 16px;
+}
+
+@media (min-width: 768px) {
+    .products {
+        flex-direction: row;
+    }
+
+    .mobile-img {
+        display: none;
+    }
+
+    .tablet-img {
+        display: block;
+    }
+
+    .products {
+        max-width: 379px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .tablet-img {
+        display: none;
+    }
+
+    .desktop-img {
+        display: block;
+    }
 }
