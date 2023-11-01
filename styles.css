@@ -498,8 +498,21 @@ h6 {
 }
 
 @media (min-width: 768px) {
+    .hero-banner {
+        margin-bottom: 100px;
+    }
+    
     .products {
         flex-direction: row;
+        margin: 0 40px;
+        max-width: 100%;
+        gap: 10px;
+        padding-bottom: 40px;
+    }
+
+    .product-container {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .mobile-img {
@@ -510,7 +523,7 @@ h6 {
         display: block;
     }
 
-    .products {
+    .hero-banner-mobile-text {
         max-width: 379px;
     }
 }
@@ -522,5 +535,15 @@ h6 {
 
     .desktop-img {
         display: block;
+    }
+
+    .hero-banner-mobile-text {
+        margin: 0 165px;
+        text-align: left;
+    }
+
+    .products {
+        margin: 0 165px;
+        gap: 30px;
     }
 }
