@@ -32,7 +32,7 @@ h1 {
 h2 {
     font-size: 40px;
     font-weight: 700;
-    line-height: 700;
+    line-height: 44px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
@@ -605,7 +605,7 @@ a:hover {
     
     .products {
         flex-direction: row;
-        margin: 0 40px;
+        margin: 16px 40px;
         max-width: 100%;
         gap: 10px;
         padding-bottom: 40px;
@@ -822,10 +822,6 @@ a:hover {
         max-width: 349px;
     }
 
-    .products {
-        max-width: 1110px;
-    }
-
     .product-container {
         width: -webkit-fill-available;
     }
@@ -898,6 +894,7 @@ a:hover {
     .products {
         margin: 0 165px;
         gap: 30px;
+        max-width: 1110px;
     }
 
     .speaker-product-box {
