@@ -1,0 +1,125 @@
+.headphones-category-top {
+    background-color: #000;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: #FFF;
+    text-align: center;
+    height: 192px;
+    width: 100%;
+    padding-top: 128px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.product-container-preview {
+    margin: 60px 35px;
+    height: 724px;
+}
+
+#flip {
+    flex-direction: row-reverse;
+}
+
+.product-bg {
+    background-color: #F1F1F1;
+    border-radius: 8px;
+    height: 327px;
+}
+
+.product-bg {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.product-bg img {
+    position: relative;
+    left: 50%;
+    margin-top: 40px;
+    margin-left: -327px;
+}
+
+.product-image-desktop {
+    display: none;
+}
+
+.product-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 64px;
+    color: #787878;
+}
+
+.product-text-box .btn-orange {
+    margin-top: 24px;
+}
+
+.product-text {
+    max-width: 100%;
+}
+
+.product-text-box h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+}
+
+@media (min-width: 768px) {
+    .headphones-category-top {
+        height: 336px;
+        padding-top: 195px;
+        margin-bottom: 0;
+    }
+
+    .product-container-preview {
+        margin: 60px 40px;
+    }
+
+    .product-text-box h2 {
+        font-size: 40px;
+        line-height: 44px;
+        max-width: 400px;
+    }
+
+    .product-text {
+        max-width: 572px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .product-container-preview {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .product-bg {
+        height: 560px;
+        width: 540px;
+    }
+
+    .product-text-box {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .product-text {
+        max-width: 445px;
+    }
+
+    .product-image-mobile {
+        display: none;
+    }
+
+    .product-image-desktop {
+        display: contents;
+    }
+
+    .product-bg img {
+        position: relative;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -350px;
+    }
+
+
+}
