@@ -9,23 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="headphones-category.css" type="text/css">
-    <title>Audiophile | Headphones</title>
+    <link rel="stylesheet" href="xx99-headphones.css" type="text/css">
+    <title>Audiophile | XX99 MARK II</title>
 </head>
 <body>
-    <div class="headphones-category-top">
-        headphones
-    </div>
+    <div class="navbar-bg"></div>
     <div class="navbar-container">
         <div class="navbar-mobile">
             <div class="menu-mobile">
                 <img src="assets/img/shared/tablet/icon-hamburger.svg" alt="burger-menu">
             </div>
-            <a href="index.html" class="logo-mobile">
+            <a class="logo-mobile" href="index.html">
                 <img src="assets/img/shared/desktop/logo.svg" alt="Audiophile-logo">
             </a>
             <div class="navbar-desktop-menu">
-                <a href="#">home</a>
-                <a href="#">headphones</a>
+                <a href="index.html">home</a>
+                <a href="headphones-category.html">headphones</a>
                 <a href="#">speakers</a>
                 <a href="#">earphones</a>
             </div>
@@ -34,11 +33,17 @@
             </div>
         </div>
     </div>
+    <div class="go-back">
+        <a href="headphones-category.html">go back</a>
+    </div>
     <div class="center-aligner">
         <div class="product-container-preview">
             <div class="product-bg">
                 <div class="product-image-mobile">
                     <img src="assets/img/shared/mobile/image-xx99-mark-two-headphones.jpg" alt="XX99 mark 2 headphones">
+                </div>
+                <div class="product-image-tablet">
+                    <img src="assets/img/shared/tablet/image-xx99-mark-two-headphones.jpg" alt="XX99 mark 2 headphones">
                 </div>
                 <div class="product-image-desktop">
                     <img src="assets/img/shared/desktop/image-xx99-mark-two-headphones.jpg" alt="XX99 mark 2 headphones">
@@ -46,40 +51,102 @@
             </div>
             <div class="product-text-box">
                 <div class="overline">new product</div>
-                <h2>xx99 mark ii headphones</h2>
+                <div class="underheader">xx99 mark ii <br>headphones</div>
                 <div class="product-text">The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.</div>
-                <button class="btn-orange"><a href="xx99-headphones.html">see product</a></button>
+                <div class="product-price">$2,999</div>
+                <div class="amount-box">
+                    <div>
+                        <button for="amount" class="reduce-amount">-</button>
+                        <input 
+                        type="number" 
+                        id="amount" 
+                        name="amount" 
+                        placeholder="1"
+                        min="0" 
+                        max="10" 
+                        required />
+                        <button for="amount" class="increase-amount">+</button>
+                    </div>
+                    <button class="btn-orange"><a href="xx99-headphones.html">add to cart</a></button>
+                </div>
             </div>
         </div>
-        <div class="product-container-preview" id="flip">
-            <div class="product-bg">
-                <div class="product-image-mobile">
+        <div class="features-box">
+            <div class="features-text">
+                <div class="underheader">features</div>
+                <div class="features-maintext">Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the auto on/off and pause features ensure that you’ll never miss a beat.<br><br>
+    
+                    The advanced Active Noise Cancellation with built-in equalizer allow you to experience your audio world on your terms. It lets you enjoy your audio in peace, but quickly interact with your surroundings when you need to. Combined with Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the XX99 Mark II headphones gives you superior sound, cutting-edge technology, and a modern design aesthetic.</div>
+            </div>
+            <div class="stuff-inside">
+                <div class="underheader">in the box</div>
+                <div class="stuff-list">
+                    <span class="stuff-amount">1x
+                        <span class="stuff-thing">headphone unit</span>
+                    </span>
+                    <span class="stuff-amount">2x
+                        <span class="stuff-thing">replacement earcups</span>
+                    </span>
+                    <span class="stuff-amount">1x
+                        <span class="stuff-thing">user manual</span>
+                    </span>
+                    <span class="stuff-amount">1x
+                        <span class="stuff-thing">3.5mm 5m audio cable</span>
+                    </span>
+                    <span class="stuff-amount">1x
+                        <span class="stuff-thing">travel bag</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="image-set">
+            <div class="left-images">
+                <img src="assets/img/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg" alt="img1">
+                <img src="assets/img/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg" alt="img2">
+            </div>
+            <div class="right-image">
+                <img src="assets/img/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg" alt="img3">
+            </div>
+        </div>
+        <div class="underheader">you may also like</div>
+        <div class="recommendations">
+            <div class="rec-item">
+                <div class="rec-img-bg-mobile">
                     <img src="assets/img/shared/mobile/image-xx99-mark-one-headphones.jpg" alt="XX99 mark 1 headphones">
                 </div>
-                <div class="product-image-desktop">
+                <div class="rec-img-bg-tablet">
+                    <img src="assets/img/shared/tablet/image-xx99-mark-one-headphones.jpg" alt="XX99 mark 1 headphones">
+                </div>
+                <div class="rec-img-bg-desktop">
                     <img src="assets/img/shared/desktop/image-xx99-mark-one-headphones.jpg" alt="XX99 mark 1 headphones">
                 </div>
-            </div>
-            <div class="product-text-box">
-                <div class="overline">new product</div>
-                <h2>xx99 mark i headphones</h2>
-                <div class="product-text">As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.</div>
+                <div class="underheader">xx99 mark i</div>
                 <button class="btn-orange">see product</button>
             </div>
-        </div>
-        <div class="product-container-preview">
-            <div class="product-bg">
-                <div class="product-image-mobile">
+            <div class="rec-item">
+                <div class="rec-img-bg-mobile">
                     <img src="assets/img/shared/mobile/image-xx59-headphones.jpg" alt="XX59 headphones">
                 </div>
-                <div class="product-image-desktop">
+                <div class="rec-img-bg-tablet">
+                    <img src="assets/img/shared/tablet/image-xx59-headphones.jpg" alt="XX59 headphones">
+                </div>
+                <div class="rec-img-bg-desktop">
                     <img src="assets/img/shared/desktop/image-xx59-headphones.jpg" alt="XX59 headphones">
                 </div>
+                <div class="underheader">xx59</div>
+                <button class="btn-orange">see product</button>
             </div>
-            <div class="product-text-box">
-                <div class="overline">new product</div>
-                <h2>xx59 headphones</h2>
-                <div class="product-text">Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.</div>
+            <div class="rec-item">
+                <div class="rec-img-bg-mobile">
+                    <img src="assets/img/shared/mobile/image-zx9-speaker.jpg" alt="ZX9 speaker">
+                </div>
+                <div class="rec-img-bg-tablet">
+                    <img src="assets/img/shared/tablet/image-zx9-speaker.jpg" alt="ZX9 speaker">
+                </div>
+                <div class="rec-img-bg-desktop">
+                    <img src="assets/img/shared/desktop/image-zx9-speaker.jpg" alt="ZX9 speaker">
+                </div>
+                <div class="underheader">zx9</div>
                 <button class="btn-orange">see product</button>
             </div>
         </div>
@@ -92,20 +159,20 @@
                     </div>
                 </div>
             </a>
-            <a href="#" class="product-container">
+            <div class="product-container">
                 <div class="container-bg">
                     <div class="product-img"><img src="assets/img/shared/desktop/image-category-thumbnail-speakers.png" alt="speakers"></div>
                         <div class="product-header">speakers</div>
                         <div class="shop-item">shop<div class="orange-arrow">></div></div>
                 </div>
-            </a>
-            <a href="#" class="product-container">
+            </div>
+            <div class="product-container">
                 <div class="container-bg">
                     <div class="product-img"><img src="assets/img/shared/desktop/image-category-thumbnail-earphones.png"  alt="earphones"></div>
                     <div class="product-header">earphones</div>
                     <div class="shop-item">shop<div class="orange-arrow">></div></div>
                 </div>
-            </a>
+            </div>
         </div>
         <div class="info-box">
             <div class="info-img-mobile">
