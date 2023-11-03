@@ -13,7 +13,6 @@
 
 .product-container-preview {
     margin: 60px 35px;
-    height: 724px;
 }
 
 #flip {
@@ -120,6 +119,4 @@
         margin-top: -50px;
         margin-left: -350px;
     }
-
-
 }
