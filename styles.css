@@ -557,6 +557,7 @@ h6 {
     gap: 10px;
 }
 
+
 a {
     text-decoration: none;
     color: #FFF;
@@ -572,6 +573,11 @@ a {
 a:hover {
     cursor: pointer;
     color: var(--primary);
+}
+
+.btn-orange a:hover {
+    cursor: pointer;
+    color: #FFF;
 }
 
 .footer-info {
