@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="headphones-category.css" type="text/css">
+    <link rel="stylesheet" href="xx99-headphones.css" type="text/css">
+    <link rel="stylesheet" href="checkout.css" type="text/css">
+    <title>Audiophile | Checkout</title>
+</head>
+
+<body>
+    <div class="navbar-bg"></div>
+    <div class="navbar-container">
+        <div class="navbar-mobile">
+            <div class="menu-mobile">
+                <img src="assets/img/shared/tablet/icon-hamburger.svg" alt="burger-menu">
+            </div>
+            <a class="logo-mobile" href="index.html">
+                <img src="assets/img/shared/desktop/logo.svg" alt="Audiophile-logo">
+            </a>
+            <div class="navbar-desktop-menu">
+                <a href="index.html">home</a>
+                <a href="headphones-category.html">headphones</a>
+                <a href="#">speakers</a>
+                <a href="#">earphones</a>
+            </div>
+            <div class="cart-mobile">
+                <img src="assets/img/shared/desktop/icon-cart.svg" alt="shopping-cart">
+            </div>
+        </div>
+    </div>
+    <div class="go-back">
+        <a href="headphones-category.html">go back</a>
+    </div>
+    <div class="main-content-box">
+        <form class="checkout-form">
+            <div class="underheader">checkout</div>
+            <div class="thirdheader">billing details</div>
+            <div class="row-box">
+                <div class="named-box">
+                    <label for="name">Name</label>
+                    <input type="text" class="checkout-input" placeholder="Name" id="name">
+                </div>
+                <div class="named-box">
+                    <label for="email">Email</label>
+                    <input type="email" class="checkout-input" placeholder="Email Address" id="email">
+                </div>
+            </div>
+            <div class="bottom-box">
+                <label for="phone">Phone</label>
+                <input type="tel" class="checkout-input" placeholder="Phone Number" id="phone">
+            </div>
+            <div class="thirdheader">shipping info</div>
+            <div class="full-box">
+                <label for="address">Address</label>
+                <input type="text" class="checkout-input" placeholder="Address" id="address">
+            </div>
+            <div class="row-box">
+                <div class="named-box">
+                    <label for="zip">ZIP code</label>
+                    <input type="text" class="checkout-input" placeholder="Zip Code" id="zip">
+                </div>
+                <div class="named-box">
+                    <label for="city">City</label>
+                    <input type="text" class="checkout-input" placeholder="City" id="city">
+                </div>
+            </div>
+            <div class="bottom-box">
+                <label for="country">Country</label>
+                <input type="text" class="checkout-input" placeholder="Country" id="country">
+            </div>
+            <div class="thirdheader">payment details</div>
+            <div class="row-box">
+                <div class="payment">payment method</div>
+                <div class="radio-box">
+                    <label for="e-money" class="radio-button">
+                        <input type="radio" name="payment" id="e-money" checked />
+                        <p>e-Money</p>
+                    </label>
+                    <label for="cod" class="radio-button">
+                        <input type="radio" name="payment" id="cod" />
+                        <p>Cash on Delivery</p>
+                    </label>
+                </div>
+            </div>
+            <div class="row-box">
+                <div class="named-box">
+                    <label for="e-money-number">e-Money Number</label>
+                    <input type="tel" class="checkout-input" placeholder="123456789" id="e-money-number">
+                </div>
+                <div class="named-box">
+                    <label for="e-money-pin">e-Money PIN</label>
+                    <input type="number" class="checkout-input" placeholder="1234" id="e-money-pin">
+                </div>
+            </div>
+        </form>
+        <div class="modal-box">
+            <div class="cart-top">
+                <div class="cart-top-left">summary</div>
+            </div>
+            <div class="cart-contents">
+                <div class="cart-item">
+                    <div class="cart-img">
+                        <img src="assets/img/cart/image-xx99-mark-two-headphones.jpg" alt="XX99 mark 2 headphones">
+                    </div>
+                    <div class="cart-item-info">
+                        <div class="item-name">XX99 MARK II</div>
+                        <div class="item-price">€2,999</div>
+                    </div>
+                    <div class="amount-box">
+                        <div class="item-price">
+                            x1
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="cart-img">
+                        <img src="assets/img/cart/image-xx59-headphones.jpg" alt="XX59 headphones">
+                    </div>
+                    <div class="cart-item-info">
+                        <div class="item-name">XX59</div>
+                        <div class="item-price">$899</div>
+                    </div>
+                    <div class="amount-box">
+                        <div class="item-price">
+                            x2
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="cart-img">
+                        <img src="assets/img/cart/image-yx1-earphones.jpg" alt="YX1 earphones">
+                    </div>
+                    <div class="cart-item-info">
+                        <div class="item-name">YX1</div>
+                        <div class="item-price">$599</div>
+                    </div>
+                    <div class="amount-box">
+                        <div class="item-price">
+                            x1
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-totals">
+                <div class="totals-left">total</div>
+                <div class="totals-right">$5,396</div>
+            </div>
+            <div class="cart-totals">
+                <div class="totals-left">shipping</div>
+                <div class="totals-right">$50</div>
+            </div>
+            <div class="cart-totals">
+                <div class="totals-left">vat (included)</div>
+                <div class="totals-right">$1,079</div>
+            </div>
+            <div class="grand-total">
+                <div class="totals-left">grand total</div>
+                <div class="grand-price">$5,446</div>
+            </div>
+            <button class="btn-orange">continue & pay</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="top-rectangle"></div>
+        <div class="logo-mobile">
+            <img src="assets/img/shared/desktop/logo.svg" alt="Audiophile-logo">
+        </div>
+        <div class="footer-links">
+            <a href="#">home</a>
+            <a href="#">headphones</a>
+            <a href="#">speakers</a>
+            <a href="#">earphones</a>
+        </div>
+        <div class="footer-info">Audiophile is an all in one stop to fulfill your audio needs. We're a small team of
+            music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come
+            and visit our demo facility - we’re open 7 days a week.</div>
+        <span class="copyright">
+            Copyright 2021. All Rights Reserved
+        </span>
+        <div class="social-media">
+            <img src="assets/img/shared/desktop/icon-facebook.svg" alt="facebook">
+            <img src="assets/img/shared/desktop/icon-twitter.svg" alt="twitter">
+            <img src="assets/img/shared/desktop/icon-instagram.svg" alt="instagram">
+        </div>
+    </div>
+</body>
+
+</html>
