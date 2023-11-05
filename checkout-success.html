@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,10 @@
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="headphones-category.css" type="text/css">
     <link rel="stylesheet" href="xx99-headphones.css" type="text/css">
-    <title>Thank you for your purchase!</title>
+    <link rel="stylesheet" href="checkout.css" type="text/css">
+    <title>Audiophile | Checkout</title>
 </head>
+
 <body>
     <div class="navbar-bg"></div>
     <div class="navbar-container">
@@ -34,190 +37,197 @@
         </div>
     </div>
     <div class="modal-bg">
-        <div class="modal-box">
-
+        <div class="modal-box-success">
+            <div><img src="assets/img/checkout/icon-order-confirmation.svg" alt="order-confirm"></div>
+            <div class="confirm-header">thank you <br>for your order</div>
+            <div class="confirm-text">You will receive an email confirmation shortly.</div>
+            <div class="order-box">
+                <div class="cart-item">
+                    <div class="cart-img">
+                        <img src="assets/img/cart/image-xx99-mark-two-headphones.jpg" alt="XX99 mark 2 headphones">
+                    </div>
+                    <div class="cart-item-info">
+                        <div class="item-name">XX99 MARK II</div>
+                        <div class="item-price">€2,999</div>
+                    </div>
+                    <div class="amount-box">
+                        <div class="item-price">
+                            x1
+                        </div>
+                    </div>
+                </div>
+                <div class="see-more">and 2 other item(s)</div>
+                <div class="grand-total-black">
+                    <div class="master-total">grand total</div>
+                    <div>$ 5,446</div>
+                </div>
             </div>
-            <div class="cart-totals"></div>
-            <button class="btn-orange">checkout</button>
+            <a href="index.html">
+                <button class="btn-orange">
+                    back to home
+                </button>
+            </a>
         </div>
     </div>
-        <div class="go-back">
-            <a href="headphones-category.html">go back</a>
-        </div>
-        <div class="center-aligner">
-            <div class="product-container-preview">
-                <div class="product-bg">
-                    <div class="product-image-mobile">
-                        <img src="assets/img/shared/mobile/image-xx99-mark-two-headphones.jpg" alt="XX99 mark 2 headphones">
-                    </div>
-                    <div class="product-image-tablet">
-                        <img src="assets/img/shared/tablet/image-xx99-mark-two-headphones.jpg" alt="XX99 mark 2 headphones">
-                    </div>
-                    <div class="product-image-desktop">
-                        <img src="assets/img/shared/desktop/image-xx99-mark-two-headphones.jpg" alt="XX99 mark 2 headphones">
-                    </div>
+    <div class="go-back">
+        <a href="headphones-category.html">go back</a>
+    </div>
+    <div class="main-content-box">
+        <form class="checkout-form">
+            <div class="underheader">checkout</div>
+            <div class="thirdheader">billing details</div>
+            <div class="row-box">
+                <div class="named-box">
+                    <label for="name">Name</label>
+                    <input type="text" class="checkout-input" placeholder="Name" id="name">
                 </div>
-                <div class="product-text-box">
-                    <div class="overline">new product</div>
-                    <div class="underheader">xx99 mark ii <br>headphones</div>
-                    <div class="product-text">The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.</div>
-                    <div class="product-price">$2,999</div>
+                <div class="named-box">
+                    <label for="email">Email</label>
+                    <input type="email" class="checkout-input" placeholder="Email Address" id="email">
+                </div>
+            </div>
+            <div class="bottom-box">
+                <label for="phone">Phone</label>
+                <input type="tel" class="checkout-input" placeholder="Phone Number" id="phone">
+            </div>
+            <div class="thirdheader">shipping info</div>
+            <div class="full-box">
+                <label for="address">Address</label>
+                <input type="text" class="checkout-input" placeholder="Address" id="address">
+            </div>
+            <div class="row-box">
+                <div class="named-box">
+                    <label for="zip">ZIP code</label>
+                    <input type="text" class="checkout-input" placeholder="Zip Code" id="zip">
+                </div>
+                <div class="named-box">
+                    <label for="city">City</label>
+                    <input type="text" class="checkout-input" placeholder="City" id="city">
+                </div>
+            </div>
+            <div class="bottom-box">
+                <label for="country">Country</label>
+                <input type="text" class="checkout-input" placeholder="Country" id="country">
+            </div>
+            <div class="thirdheader">payment details</div>
+            <div class="row-box">
+                <div class="payment">payment method</div>
+                <div class="radio-box">
+                    <label for="e-money" class="radio-button">
+                        <input type="radio" name="payment" id="e-money" checked />
+                        <p>e-Money</p>
+                    </label>
+                    <label for="cod" class="radio-button">
+                        <input type="radio" name="payment" id="cod" />
+                        <p>Cash on Delivery</p>
+                    </label>
+                </div>
+            </div>
+            <div class="row-box">
+                <div class="named-box">
+                    <label for="e-money-number">e-Money Number</label>
+                    <input type="tel" class="checkout-input" placeholder="123456789" id="e-money-number">
+                </div>
+                <div class="named-box">
+                    <label for="e-money-pin">e-Money PIN</label>
+                    <input type="number" class="checkout-input" placeholder="1234" id="e-money-pin">
+                </div>
+            </div>
+        </form>
+        <div class="modal-box">
+            <div class="cart-top">
+                <div class="cart-top-left">summary</div>
+            </div>
+            <div class="cart-contents">
+                <div class="cart-item">
+                    <div class="cart-img">
+                        <img src="assets/img/cart/image-xx99-mark-two-headphones.jpg" alt="XX99 mark 2 headphones">
+                    </div>
+                    <div class="cart-item-info">
+                        <div class="item-name">XX99 MARK II</div>
+                        <div class="item-price">€2,999</div>
+                    </div>
                     <div class="amount-box">
-                        <div>
-                            <button for="amount" class="reduce-amount">-</button>
-                            <input 
-                            type="number" 
-                            id="amount" 
-                            name="amount" 
-                            placeholder="1"
-                            min="0" 
-                            max="10" 
-                            required />
-                            <button for="amount" class="increase-amount">+</button>
+                        <div class="item-price">
+                            x1
                         </div>
-                        <button class="btn-orange"><a href="cart.html">add to cart</a></button>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="cart-img">
+                        <img src="assets/img/cart/image-xx59-headphones.jpg" alt="XX59 headphones">
+                    </div>
+                    <div class="cart-item-info">
+                        <div class="item-name">XX59</div>
+                        <div class="item-price">$899</div>
+                    </div>
+                    <div class="amount-box">
+                        <div class="item-price">
+                            x2
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="cart-img">
+                        <img src="assets/img/cart/image-yx1-earphones.jpg" alt="YX1 earphones">
+                    </div>
+                    <div class="cart-item-info">
+                        <div class="item-name">YX1</div>
+                        <div class="item-price">$599</div>
+                    </div>
+                    <div class="amount-box">
+                        <div class="item-price">
+                            x1
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="features-box">
-                <div class="features-text">
-                    <div class="underheader">features</div>
-                    <div class="features-maintext">Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the auto on/off and pause features ensure that you’ll never miss a beat.<br><br>
-                        
-                        The advanced Active Noise Cancellation with built-in equalizer allow you to experience your audio world on your terms. It lets you enjoy your audio in peace, but quickly interact with your surroundings when you need to. Combined with Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the XX99 Mark II headphones gives you superior sound, cutting-edge technology, and a modern design aesthetic.</div>
-                    </div>
-                    <div class="stuff-inside">
-                        <div class="underheader">in the box</div>
-                        <div class="stuff-list">
-                            <span class="stuff-amount">1x
-                                <span class="stuff-thing">headphone unit</span>
-                            </span>
-                            <span class="stuff-amount">2x
-                                <span class="stuff-thing">replacement earcups</span>
-                            </span>
-                            <span class="stuff-amount">1x
-                                <span class="stuff-thing">user manual</span>
-                            </span>
-                            <span class="stuff-amount">1x
-                                <span class="stuff-thing">3.5mm 5m audio cable</span>
-                            </span>
-                            <span class="stuff-amount">1x
-                                <span class="stuff-thing">travel bag</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="image-set">
-                    <div class="left-images">
-                        <img src="assets/img/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg" alt="img1">
-                        <img src="assets/img/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg" alt="img2">
-                    </div>
-                    <div class="right-image">
-                        <img src="assets/img/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg" alt="img3">
-                    </div>
-                </div>
-                <div class="underheader">you may also like</div>
-                <div class="recommendations">
-                    <div class="rec-item">
-                        <div class="rec-img-bg-mobile">
-                            <img src="assets/img/shared/mobile/image-xx99-mark-one-headphones.jpg" alt="XX99 mark 1 headphones">
-                        </div>
-                        <div class="rec-img-bg-tablet">
-                            <img src="assets/img/shared/tablet/image-xx99-mark-one-headphones.jpg" alt="XX99 mark 1 headphones">
-                        </div>
-                        <div class="rec-img-bg-desktop">
-                            <img src="assets/img/shared/desktop/image-xx99-mark-one-headphones.jpg" alt="XX99 mark 1 headphones">
-                        </div>
-                        <div class="underheader">xx99 mark i</div>
-                        <button class="btn-orange">see product</button>
-                    </div>
-                    <div class="rec-item">
-                        <div class="rec-img-bg-mobile">
-                            <img src="assets/img/shared/mobile/image-xx59-headphones.jpg" alt="XX59 headphones">
-                        </div>
-                        <div class="rec-img-bg-tablet">
-                            <img src="assets/img/shared/tablet/image-xx59-headphones.jpg" alt="XX59 headphones">
-                        </div>
-                        <div class="rec-img-bg-desktop">
-                            <img src="assets/img/shared/desktop/image-xx59-headphones.jpg" alt="XX59 headphones">
-                        </div>
-                        <div class="underheader">xx59</div>
-                        <button class="btn-orange">see product</button>
-                    </div>
-                    <div class="rec-item">
-                        <div class="rec-img-bg-mobile">
-                            <img src="assets/img/shared/mobile/image-zx9-speaker.jpg" alt="ZX9 speaker">
-                        </div>
-                        <div class="rec-img-bg-tablet">
-                            <img src="assets/img/shared/tablet/image-zx9-speaker.jpg" alt="ZX9 speaker">
-                        </div>
-                        <div class="rec-img-bg-desktop">
-                            <img src="assets/img/shared/desktop/image-zx9-speaker.jpg" alt="ZX9 speaker">
-                        </div>
-                        <div class="underheader">zx9</div>
-                        <button class="btn-orange">see product</button>
-                    </div>
-                </div>
-                <div class="products">
-                    <a href="headphones-category.html" class="product-container">
-                        <div class="container-bg">
-                            <div class="product-img"><img src="assets/img/shared/desktop/image-category-thumbnail-headphones.png" alt="xx99-headphones"></div>
-                            <div class="product-header">headphones</div>
-                            <div class="shop-item">shop<div class="orange-arrow">></div>
-                        </div>
-                    </div>
-                </a>
-                <div class="product-container">
-                    <div class="container-bg">
-                        <div class="product-img"><img src="assets/img/shared/desktop/image-category-thumbnail-speakers.png" alt="speakers"></div>
-                        <div class="product-header">speakers</div>
-                        <div class="shop-item">shop<div class="orange-arrow">></div></div>
-                    </div>
-                </div>
-                <div class="product-container">
-                    <div class="container-bg">
-                        <div class="product-img"><img src="assets/img/shared/desktop/image-category-thumbnail-earphones.png"  alt="earphones"></div>
-                        <div class="product-header">earphones</div>
-                        <div class="shop-item">shop<div class="orange-arrow">></div></div>
-                    </div>
-                </div>
+            <div class="cart-totals">
+                <div class="totals-left">total</div>
+                <div class="totals-right">$5,396</div>
             </div>
-            <div class="info-box">
-                <div class="info-img-mobile">
-                    <img src="assets/img/shared/mobile/image-best-gear.jpg" alt="best-gear">
-                </div>
-                <div class="info-img-tablet">
-                    <img src="assets/img/shared/tablet/image-best-gear.jpg" alt="best-gear">
-                </div>
-                <div class="info-text-box">
-                    <h4>bringing you the <span id="orange-highlight">best</span> audio gear</h4>
-                    <div class="info-text">Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</div>
-                </div>
-                <div class="info-img-desktop">
-                    <img src="assets/img/shared/desktop/image-best-gear.jpg" alt="best-gear">
-                </div>
+            <div class="cart-totals">
+                <div class="totals-left">shipping</div>
+                <div class="totals-right">$50</div>
             </div>
+            <div class="cart-totals">
+                <div class="totals-left">vat (included)</div>
+                <div class="totals-right">$1,079</div>
+            </div>
+            <div class="grand-total">
+                <div class="totals-left">grand total</div>
+                <div class="grand-price">$5,446</div>
+            </div>
+            <a href="checkout-success.html">
+                <button class="btn-orange">
+                    continue & pay
+                </button>
+            </a>
         </div>
-        <div class="footer">
-            <div class="top-rectangle"></div>
-            <div class="logo-mobile">
-                <img src="assets/img/shared/desktop/logo.svg" alt="Audiophile-logo">
-            </div>
-            <div class="footer-links">
-                <a href="#">home</a>
-                <a href="#">headphones</a>
-                <a href="#">speakers</a>
-                <a href="#">earphones</a>
-            </div>
-            <div class="footer-info">Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</div>
-            <span class="copyright">
-                Copyright 2021. All Rights Reserved
-            </span>
-            <div class="social-media">
-                <img src="assets/img/shared/desktop/icon-facebook.svg" alt="facebook">
-                <img src="assets/img/shared/desktop/icon-twitter.svg" alt="twitter">
-                <img src="assets/img/shared/desktop/icon-instagram.svg" alt="instagram">
-            </div>
+    </div>
+    <div class="footer">
+        <div class="top-rectangle"></div>
+        <div class="logo-mobile">
+            <img src="assets/img/shared/desktop/logo.svg" alt="Audiophile-logo">
         </div>
-    </body>
-    </html>
+        <div class="footer-links">
+            <a href="#">home</a>
+            <a href="#">headphones</a>
+            <a href="#">speakers</a>
+            <a href="#">earphones</a>
+        </div>
+        <div class="footer-info">Audiophile is an all in one stop to fulfill your audio needs. We're a small team of
+            music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come
+            and visit our demo facility - we’re open 7 days a week.</div>
+        <span class="copyright">
+            Copyright 2021. All Rights Reserved
+        </span>
+        <div class="social-media">
+            <img src="assets/img/shared/desktop/icon-facebook.svg" alt="facebook">
+            <img src="assets/img/shared/desktop/icon-twitter.svg" alt="twitter">
+            <img src="assets/img/shared/desktop/icon-instagram.svg" alt="instagram">
+        </div>
+    </div>
+</body>
+
+</html>
