@@ -175,6 +175,7 @@ h6 {
     width: 100%;
     display: flex;
     padding: 24px;
+    z-index: 2;
 }
 
 .navbar-mobile {
@@ -601,6 +602,25 @@ a:hover {
     background: var(--primary);
 }
 
+.modal-bg-menu {
+    background-color: #00000080;
+    height: 820%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.modal-box-menu {
+    position: relative;
+    height: fit-content;
+    width: auto;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    margin-top: 90px;
+    padding: 32px 28px;
+    z-index: 2;
+}
+
 @media (min-width: 768px) {
     .navbar-container {
         border-bottom: none;
@@ -1016,4 +1036,7 @@ a:hover {
         bottom: 80px;
     }
 
+    .modal-bg-menu {
+        display: none;
+    }
 }
